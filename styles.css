@@ -1,0 +1,53 @@
+/* Denote heading colors and alignment */
+h1 {
+    color:darkred;
+    text-align: center;
+}
+h2 {
+    color:tomato;
+    text-align: center;
+}
+/* Align all paragraphs to the center */
+p {
+    text-align: center;
+}
+/* Disease Card Design grid layout */
+#dc-grid {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto auto auto;
+}
+/* Disease Card Design w/o hover */
+#dc-grid > .dc {
+    height: 200px;
+    width: 200px;
+}
+.symptoms {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    color:white;
+}
+.disease {
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+}
+.name {
+    text-align: center;
+}
+/* Disease Card Design when hovering over */
+.dc:hover .symptoms {
+    opacity: 0.7;
+}
+.dc:hover .disease {
+    opacity: .2;
+}
+
+

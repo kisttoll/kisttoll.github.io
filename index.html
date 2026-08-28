@@ -1,10 +1,12 @@
 <!doctype html>
 <!--- Start of the HTML content -->
 <html lang="en">
-    <!--- Head of the website - contains metadata-->
+    <!--- Head of the website - contains metadata -->
     <head>
         <title>Tomato Diseases</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
+   
     <body>
         <h1>The Dangers of Tomato Diseases</h1>
 
@@ -16,23 +18,24 @@
         Examples are included below:
         </p>
 
-        <table> 
-            <thead>
-                <tr>
-                    <th>Disease</th>
-                    <th>Sign</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Grey mold</td>
-                    <td>Grey hyphal cells</td>
-                </tr>
-            </tbody>
-        </table>
-        <form>
-            <input type="text" placeholder="Disease" name="disease">
-            <input type="submit">
-        </form>
+        <!--- The disease cards (dc) in a grid -->
+        <div id="dc-grid">
+            <div class="dc">
+                <div class="symptoms">
+                    <p>rings on the leaves</p>
+                </div>
+                <img class="disease" src="eb.png" alt="Early Blight symptoms">
+                <div class="name">Early Blight</div>
+            </div>
+            <div class="dc">
+                <div class="symptoms">
+                    <p>water soaked chlorotic spots that progress to necrotic lesions</p>
+                </div>
+                <img class="disease" src="lb.png" alt="Late Blight syptoms">
+                <div class="name">Late Blight</div>
+            </div>
+                
+        </div>
+        
     </body>
 </html>
