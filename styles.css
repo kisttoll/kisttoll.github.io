@@ -1,3 +1,8 @@
+/* Denote style for entire webpage */
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
 /* Denote heading colors and alignment */
 h1 {
     color:darkred;
@@ -14,13 +19,14 @@ p {
 /* Disease Card Design grid layout */
 #dc-grid {
     display: grid;
-    padding: 20px;
+    justify-content: center;
     grid-template-columns: auto auto auto;
 }
 /* Disease Card Design w/o hover */
 #dc-grid > .dc {
     height: 200px;
     width: 200px;
+    padding: 20px;
 }
 .symptoms {
     position: absolute;
@@ -44,10 +50,10 @@ p {
 }
 /* Disease Card Design when hovering over */
 .dc:hover .symptoms {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 .dc:hover .disease {
-    opacity: .2;
+    opacity: .3;
 }
 
 
