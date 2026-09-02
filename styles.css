@@ -55,5 +55,18 @@ p {
 .dc:hover .disease {
     opacity: .3;
 }
-
-
+.space{
+    padding: 20px;
+}
+#disease-effects{
+    background-color: white;
+    padding: 20px;
+}
+#de-image{
+    float: left;
+    clip-path: circle(40%);
+    shape-outside: circle(45%);
+}
+#de-text{
+    text-align: left;
+}
