@@ -3,6 +3,13 @@ html {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: antiquewhite;
 }
+
+
+/* Header styling */
+header{
+    margin: 50px;
+    border-bottom: 5px solid #333;
+}
 /* Denote heading colors and alignment */
 h1 {
     color:darkred;
@@ -11,11 +18,14 @@ h1 {
 h2 {
     color:tomato;
     text-align: center;
+    margin-top: 50px;
 }
 /* Align all paragraphs to the center */
 p {
     text-align: center;
 }
+
+
 /* Disease Card Design grid layout */
 #dc-grid {
     display: grid;
@@ -55,18 +65,51 @@ p {
 .dc:hover .disease {
     opacity: .3;
 }
-.space{
-    padding: 20px;
-}
+
+
+/* Disease Effect Section */
 #disease-effects{
+    border: 2px solid #333;
     background-color: white;
+    display: block;
+    margin: auto;
     padding: 20px;
+    height: 180px; 
+    width: 700px;
 }
 #de-image{
-    float: left;
+    float: right;
     clip-path: circle(40%);
     shape-outside: circle(45%);
 }
 #de-text{
-    text-align: left;
+    text-align: right;
+    margin: 20px;
+}
+
+
+/* Management Practices Section */
+.management_container{
+    border: 2px solid #333;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    min-height: 200px;
+}
+.management_container > img{
+    padding: 10px;
+    height: 180px;
+    width: 250px;
+    margin-bottom: auto;
+}
+.management_container > p{
+    margin: 20px;
+}
+
+/* footer design */
+footer{
+    background-color: #333;
+    min-height: 10px;
 }
